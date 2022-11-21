@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css'%}" />
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+
+  <body>
+    <!--  -->
+    <div class="container-fluid">
+      <div class="row" style="background-color: #d3d3d3">
+        <div class="col-lg-6 text-center text-align-center">
+          <div class="d-inline-flex">
+            <a class="text-secondary p-1" href="#" style="text-decoration: none"
+              >About</a
+            >
+            <a class="text-secondary p-1" href="#" style="text-decoration: none"
+              >Contact</a
+            >
+            <a class="text-secondary p-1" href="#" style="text-decoration: none"
+              >Help</a
+            >
+            <a class="text-secondary p-1" href="#" style="text-decoration: none"
+              >FAQ</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-6 text-center text-align-center">
+          <div class="d-inline-flex">
+            <div class="dropdown">
+              <button
+                class="text-secondary btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                My Account
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="text-secondary dropdown-item" href="#">Sign In</a>
+                <a class="text-secondary dropdown-item" href="#">Sign Up</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button
+                class="text-secondary btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                USD
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="text-secondary dropdown-item" href="#">INR</a>
+                <a class="text-secondary dropdown-item" href="#">NPR</a>
+                <a class="text-secondary dropdown-item" href="#">CAD</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button
+                class="text-secondary btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                ENGLISH
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="text-secondary dropdown-item" href="#">HINDI</a>
+                <a class="text-secondary dropdown-item" href="#">NEPALI</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row m-4 text-align-center">
+        <div class="col-lg-4">
+          <a href="" class="text-decoration-none">
+            <span class="h1 text-uppercase text-primary bg-dark px-2"
+              >Multi</span
+            >
+            <span class="h1 text-uppercase text-dark bg-warning px-2 ml-n1"
+              >Shop</span
+            >
+          </a>
+        </div>
+        <div class="col-lg-4 text-left">
+          <div class="input-group">
+            <input
+              type="search"
+              class="form-control rounded"
+              placeholder="Search"
+              aria-label="Search"
+              aria-describedby="search-addon"
+            />
+            <button type="button" class="btn btn-outline-primary">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-4" style="text-align: right">
+          <p class="m-0">Customer Service:</p>
+          <h5 class="m-0">9828245888</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: grey">
+      <div class="row">
+        <div class="col-lg-3 col-md-3">
+          <a
+            class="btn d-flex align-items-center justify-content bg-warning w-100"
+            data-toggle="collapse"
+            href="#navbar-vertical"
+            style="height: 65px; padding: 0 30px"
+          >
+            <h6 class="text-dark m-0">
+              <i class="fa fa-bars mr-1"></i>
+              <strong>Categories</strong>
+              <i class="fa fa-angle-down text-dark"></i>
+            </h6>
+          </a>
+          <nav
+            class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light"
+            id="navbar-vertical"
+            style="width: calc(100% - 20px); z-index: 999"
+          >
+            <div class="navbar-nav w-100">
+              <div class="nav-item dropdown dropright">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  >Dresses <i class="fa fa-angle-right float-right mt-1"></i
+                ></a>
+                <div
+                  class="dropdown-menu position-absolute rounded-0 border-0 m-0"
+                >
+                  <a href="" class="dropdown-item">Men's Dresses</a>
+                  <a href="" class="dropdown-item">Women's Dresses</a>
+                  <a href="" class="dropdown-item">Baby's Dresses</a>
+                </div>
+              </div>
+              <a href="" class="nav-item nav-link">Shirts</a>
+              <a href="" class="nav-item nav-link">Jeans</a>
+              <a href="" class="nav-item nav-link">Swimwear</a>
+              <a href="" class="nav-item nav-link">Sleepwear</a>
+              <a href="" class="nav-item nav-link">Sportswear</a>
+              <a href="" class="nav-item nav-link">Jumpsuits</a>
+              <a href="" class="nav-item nav-link">Blazers</a>
+              <a href="" class="nav-item nav-link">Jackets</a>
+              <a href="" class="nav-item nav-link">Shoes</a>
+            </div>
+          </nav>
+        </div>
+        <div class="col-lg-6 col-md-3" style="padding-left: 40px">
+          <nav class="navbar navbar-expand-lg navbar-light bg-grey mt-1">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/home"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/shop">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/shop_details">Shop Detail</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Pages
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/shop_cart">Shopping cart</a>
+                    <a class="dropdown-item" href="#">Checkout</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-lg-3">
+          <nav class="navbar navbar-dark bg-grey mt-2">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <div class="d-inline-flex">
+                <li class="nav-item">
+                  <a
+                    href="nav-link"
+                    style="
+                      margin-left: 40px;
+                      text-decoration: none;
+                      font-size: 20px;
+                    "
+                  >
+                    <i class="fa-solid fa-heart"></i>
+                    <strong>0</strong>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="nav-link"
+                    style="
+                      margin-left: 40px;
+                      text-decoration: none;
+                      font-size: 20px;
+                    "
+                    ><i class="fa-solid fa-cart-shopping"></i>
+                    <strong>0</strong>
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </nav>
+        </div>
+        <!-- row ends here -->
+      </div>
+      <!-- container ends here -->
+    </div>
+
+    <!--  -->
+    {% block home_content %}{% endblock %} 
+    {% block shop_content %}{% endblock %}
+    {% block shop_details %}{% endblock %}
+    {% block shopping_cart %}{% endblock %}
+
+    <!--  -->
+    <footer style="background-color: grey; overflow: hidden">
+      <div class="row footer-row">
+        <div class="col-3 footer-col">
+          <div class="get-in-touch">
+            <h4 style="margin: 10px">Get in touch</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consequatur laboriosam voluptate explicabo!
+            </p>
+            <p class="m-2">
+              <i class="fa-solid fa-location-pin"></i> Thecho Lalitpur
+            </p>
+            <p class="m-2"><i class="fa-solid fa-message"></i> Message me</p>
+            <p class="m-2"><i class="fa-solid fa-phone"></i> Call me</p>
+          </div>
+        </div>
+        <div class="col-3 footer-col">
+          <div class="quick-shop">
+            <h3>QUICK SHOP</h3>
+            <a href="#"><i class="arrow right"></i> Home </a><br />
+            <a href="#"><i class="arrow right"></i> Our Shop </a><br />
+            <a href="#"><i class="arrow right"></i> Shop Detail </a><br />
+            <a href="#"><i class="arrow right"></i> Shopping Cart </a><br />
+            <a href="#"><i class="arrow right"></i> Checkout </a><br />
+            <a href="#"><i class="arrow right"></i> Contact Us </a><br />
+          </div>
+        </div>
+        <div class="col-3 footer-col">
+          <div class="quick-shop">
+            <h3>MY ACCOUNT</h3>
+            <a href="#"><i class="arrow right"></i> Home </a><br />
+            <a href="#"><i class="arrow right"></i> Our Shop </a><br />
+            <a href="#"><i class="arrow right"></i> Shop Detail </a><br />
+            <a href="#"><i class="arrow right"></i> Shopping Cart </a><br />
+            <a href="#"><i class="arrow right"></i> Checkout </a><br />
+            <a href="#"><i class="arrow right"></i> Contact Us </a><br />
+          </div>
+        </div>
+        <div class="col-3 footer-col">
+          <div class="social-media">
+            <h3>NEWS-LETTER</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              quidem voluptatem sapiente.
+            </p>
+            <div class="email">
+              <form action="">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Email Address"
+                  />
+                  <div class="input-group-append">
+                    <button class="btn btn-primary">Sign Up</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <br />
+            <h4>Follow us</h4>
+            <div class="socialmedia">
+              <div class="d-inline-flex">
+                <a class="social-media-link" href=""
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a class="social-media-link" href=""
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a class="social-media-link" href=""
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a class="social-media-link" href=""
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      © Shashank Thapa 2022 @ home
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      ;
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      ;
+      crossorigin="anonymous"
+      ;
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/20e5dfdcdf.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
